@@ -3,6 +3,12 @@
 @import "variables";
 @import "../../bower_components/bootstrap/scss/bootstrap-flex";
 
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
 .logo-spinlister {
   padding-top: .308rem;
   margin-left: .769rem;
