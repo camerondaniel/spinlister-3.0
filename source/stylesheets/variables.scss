@@ -1,0 +1,207 @@
+// Variables // --------------------------------------------------
+
+// Bootstrap overrides
+// Colors
+$gray-dark:                 #191919;
+$gray:                      #222222;
+$gray-light:                #444444;
+$gray-lighter:              #777777;
+$gray-lightest:             #dddddd;
+
+$brand-primary:             #4faf43;
+$brand-success:             #4faf43;
+$brand-info:                #327ada;
+$brand-warning:             #e6b92e;
+$brand-danger:              #ff3b30;
+
+$white:                     #ffffff;
+$black:                     #000000;
+$blue-facebook:             #3B5998;
+$blue-twitter:              #55ACEE;
+$orange-strava:             #FC4C02;
+$pink-rapha:                #E54970;
+
+// Body
+$body-bg:                    $gray;
+$body-color:                 $gray-lightest;
+
+// Links
+$link-color:                 $brand-primary;
+$link-decoration:            underline;
+$link-hover-color:           lighten($link-color, 15%);
+$link-hover-decoration:      underline;
+
+// Typography
+// Small buttons are bigger then default -md buttons
+$font-size-root:             12px;
+$font-size-lg:               1.333333rem;
+$font-size-sm:               1.166666rem;
+$font-size-xs:               .75rem;
+
+$font-size-h1:               1.25rem;
+$font-size-h2:               1.166666rem;
+$font-size-h3:               1rem;
+$font-size-h4:               .9166666rem;
+$font-size-h5:               .8333333rem;
+$font-size-h6:               .75rem;
+
+$display1-size:               2rem;
+$display2-size:               1.666666rem;
+
+$display1-weight:             400;
+$display2-weight:             400;
+$display3-weight:             400;
+$display4-weight:             400;
+
+$headings-color:              $white;
+
+$lead-font-size:             1.083333rem;
+$lead-font-weight:           500;
+
+$text-muted:                  $gray-lighter;
+
+$hr-border-color:             rgba($gray-light, .5);
+
+// Components
+$border-radius-lg:       .333333rem;
+$border-radius-sm:       .25rem;
+
+// Buttons
+$btn-padding-x:                  2rem;
+$btn-padding-y:                  .433333rem;
+$btn-font-weight:                500;
+
+$btn-secondary-color:            #fff;
+$btn-secondary-bg:               $gray-lighter;
+$btn-secondary-border:           $btn-secondary-bg;
+
+$btn-link-disabled-color:        $gray-lighter;
+
+$btn-padding-x-sm:               2rem;
+$btn-padding-y-sm:               .433333rem;
+
+$btn-padding-x-lg:               3rem;
+$btn-padding-y-lg:               .8125rem;
+
+// Tables
+$table-border-width:              0;
+
+// Forms
+$input-padding-x:                .433333rem;
+$input-padding-y:                .5rem;
+
+$input-bg:                       $gray-light;
+$input-bg-disabled:              rgba($gray-light, .5);
+
+$input-color:                    $gray-lightest;
+$input-border-color:             transparent;
+$input-btn-border-width:         0;
+$input-box-shadow:               none;
+
+$input-border-focus:             transparent;
+$input-box-shadow-focus:         transparent;
+
+$input-color-placeholder:        $gray-lighter;
+
+$input-group-addon-bg:           $gray-light;
+$input-group-addon-border-color: transparent;
+
+// Dropdowns
+$dropdown-bg:                    $gray-light;
+$dropdown-border-color:          transparent;
+$dropdown-border-width:          0;
+$dropdown-divider-bg:            rgba($gray-light, .5);
+
+// Navbar
+$navbar-border-radius:           0;
+$navbar-padding-horizontal:      0;
+
+$navbar-dark-color:              $gray-dark;
+
+// Navs
+$nav-link-hover-bg:                         transparent;
+
+$nav-tabs-border-color:                     $hr-border-color;
+
+$nav-tabs-link-border-width:                2px;
+$nav-tabs-link-hover-border-color:          $hr-border-color;
+
+$nav-tabs-active-link-hover-bg:             transparent;
+$nav-tabs-active-link-hover-color:          $white;
+$nav-tabs-active-link-hover-border-color:   $hr-border-color;
+
+$nav-tabs-justified-link-border-color:            $hr-border-color;
+$nav-tabs-justified-active-link-border-color:     $hr-border-color;
+
+// Pagination
+$pagination-color:               $gray-lightest;
+$pagination-bg:                  $gray-light;
+$pagination-border-width:        0;
+$pagination-border-color:        transparent;
+
+$pagination-hover-bg:            lighten($pagination-bg, 15%);
+$pagination-hover-border:        transparent;
+
+$pagination-active-bg:           darken($pagination-bg, 15%);
+$pagination-active-border:       transparent;
+
+$pagination-disabled-color:      rgba($pagination-color, .5);
+$pagination-disabled-bg:         rgba($pagination-bg, .5) ;
+$pagination-disabled-border:     transparent ;
+
+// Jumbotron
+$jumbotron-padding:              2.5rem;
+
+// Form states and alerts
+$state-success-border:           transparent;
+
+$state-info-border:              transparent;
+
+$state-warning-border:           transparent;
+
+$state-danger-text:              $brand-danger;
+$state-danger-bg:                darken($brand-danger, 80%);
+$state-danger-border:            transparent;
+
+// Modals
+$modal-inner-padding:         0 20px 0 20px;
+
+$modal-title-padding:         20px 20px 0 20px;
+
+$modal-content-bg:            $gray;
+
+$modal-backdrop-opacity:      .8;
+$modal-header-border-color:   transparent;
+
+// Close
+$close-font-weight:           400;
+$close-color:                 darken($gray-lightest, 10%);
+$close-text-shadow:           none;
+
+// Code
+$kbd-bg:                      $black;
+
+// Spinlister overrides
+// Font Weight
+$font-weight-1: 100;
+$font-weight-2: 200;
+$font-weight-3: 300;
+$font-weight-4: 400; // Regular / Normal
+$font-weight-5: 500; // Medium
+$font-weight-6: 600;
+$font-weight-7: 700; // Bold
+$font-weight-8: 800;
+$font-weight-9: 900;
+
+// Z-Index
+$z-index-0:     0;
+$z-index-1:   100;
+$z-index-2:   200;
+$z-index-3:   300;
+$z-index-4:   400;
+$z-index-5:   500;
+$z-index-6:   600;
+$z-index-7:   700;
+$z-index-8:   800;
+$z-index-9:   900;
+$z-index-10: 1000;
