@@ -3,15 +3,66 @@
 @import "variables";
 @import "../../bower_components/bootstrap/scss/bootstrap-flex";
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 header {
   position: absolute;
   width: 100%;
   z-index: 10;
 }
 
-.logo-spinlister {
+.logo {
   padding-top: .308rem;
-  margin-left: .769rem;
+}
+
+.search-holder {
+  padding-left: .75rem;
+}
+
+.search-form {
+  height: 2.2rem;
+  font-size: 1rem;
+  background-color: white;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-container {
+  border-bottom: 1px solid #ddd;
+}
+
+.navlink {
+  padding-top: .308rem;
+}
+
+.navgray {
+  padding-top: .4rem;
+}
+
+.nav-text-white {
+  color: #ddd;
+  font-size: 1.154rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-text-gray {
+  color: #bbb;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-success {
+  text-decoration: none;
+  color: white;
+  font-family: HelveticaNeue;
+  font-size: 1.077rem;
+  font-weight: 500;
 }
 
 .ride-detail-hero {
@@ -26,14 +77,16 @@ header {
 }
 
 .ride-specs {
-  padding: 1.308rem 0;
   background-color: #181818;
-  box-shadow: 0 0.077rem 0 rgba(51, 51, 51, 0.35);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.ride-type-bicycle {
-  margin-right: .760rem;
-  margin-left: .760rem;
+.ride-price {
+  font-size: 1.385rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .ride-type {
@@ -42,14 +95,14 @@ header {
 }
 
 .ride-height {
-  display: block;
-  margin-left: .760rem;
   color: #bbb;
+  font-size: 1rem;
   font-weight: 400;
+  display: block;
 }
 
-.ride-price {
-  font-size: 1rem;
+.ride-type-bicycle {
+  margin-right: .760rem;
 }
 
 .border-line {
@@ -61,10 +114,10 @@ header {
 
 .lister-main {
   padding-top: 1.154rem;
-  padding-bottom: .654rem;
+  border-bottom: 1px solid #333;
 }
 
-.lister-profile {
+.lister-info {
   padding-top: 1.308rem;
 }
 
@@ -85,7 +138,6 @@ header {
 
 .all-extras {
   padding-top: 1.154rem;
-  padding-bottom: .654rem;
 }
 
 .extra-font {
@@ -100,14 +152,27 @@ header {
   color: #ddd;
   line-height: 1.538rem;
   padding-top: 1.154rem;
+  border-bottom: 1px #333 solid;
 }
 
 .review-header {
   padding-top: .769rem;
 }
 
+.review-header-font {
+  color: white;
+  font-size: 1.154rem;
+  font-weight: 500;
+}
+
 .review-header-stars {
-  padding-bottom: .3rem;
+  padding-bottom: .45rem;
+  padding-left: 1rem;
+}
+
+.review-main {
+  border-bottom: 1px #333 solid;
+  padding-left: 0;
 }
 
 .review-stars {
@@ -118,7 +183,7 @@ header {
 }
 
 .profile-review {
-  padding-top: 2.615rem;
+  padding-top: 1.1rem;
 }
 
 .review-body {
@@ -147,9 +212,12 @@ header {
 
 .profile-pic {
   position: relative;
-  padding-top: .692rem;
-  width: 32%;
-  height: 32%;
+  padding-top: 9px;
+  width: 120px;
+}
+
+.lister-description {
+  border-bottom: solid 1px #333;
 }
 
 .join-date {
@@ -167,6 +235,7 @@ header {
 .verification-bubbles {
   padding-top: 1.154rem;
   padding-bottom: 1.154rem;
+  border-bottom: solid 1px #333;
 }
 
 .verifications {
@@ -184,6 +253,7 @@ header {
 .stats-lister-all {
   padding-top: 1.154rem;
   padding-bottom: .654rem;
+  border-bottom: solid 1px #333;
 }
 
 .stats-lister {
@@ -204,10 +274,14 @@ header {
 
 .card {
   margin: 0;
+  background-color: none;
+  border: none;
+  border-radius: none;
 }
 
 .card-img {
   width: 100%;
+  border-radius: none;
 }
 
 .card-overlay-text {
@@ -245,14 +319,46 @@ header {
   padding-top: .5rem;
 }
 
-@include media-breakpoint-up(sm) {
-  .ride-meta-data {
-    background-color: #181818;
-    box-shadow: 0 0.077rem 0 rgba(51, 51, 51, 0.35);
+@media (min-width: 375px) {
+  .search-holder {
+    padding-left: 3rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .profile-cover {
+    width: 56.2%;
+    margin-left: 22%;
   }
 
-  .ride-price {
-    padding-top: 2.2rem;
+  .container-fluid {
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+
+  .ride-detail-title {
+    left: 20%;
+    right: 20%;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+
+  .container {
+    max-width: 720px;
+  }
+
+  .logo {
+    padding-top: .488rem;
+  }
+
+  .search-holder {
+    padding-top: .18rem;
+  }
+
+  .search-form {
+    background-color: white;
   }
 
   .footer-link {
@@ -261,12 +367,79 @@ header {
     font-weight: 400;
     text-decoration: none;
   }
+
+  .ride-detail-title {
+    font-size: 2.462rem;
+    text-align: center;
+    left: 16%;
+    right: 16%;
+  }
+
+  .ride-meta-data {
+    background-color: #181818;
+  }
+
+  .ride-specs {
+    padding-left: 24px;
+  }
+
+  .ride-price {
+    font-size: 1.16rem;
+    font-weight: 400;
+    padding-top: 1.6rem;
+    text-align: right !important;
+    padding-right: 24px;
+  }
+
+  .last-price {
+    padding-right: 0;
+  }
+
+  .all-extras {
+    padding-top: 0;
+  }
+
+  .review-stars {
+    right: 0;
+  }
+
+  .profile-pic {
+    width: 140px;
+    padding-top: 30px;
+  }
+
+  .lister-main {
+    padding-left: 0;
+  }
+
+  .ride-description {
+    padding-left: 0;
+  }
+
+  .review-header {
+    padding-left: 0;
+  }
+
+  .lister-description {
+    padding-left: 0;
+  }
+
+  .verification-bubbles {
+    padding-left: 0;
+  }
+
 }
 
 @include media-breakpoint-down(sm) {
-  .ride-price {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
+  .nav-container {
+    margin-left: .9375rem;
+    margin-right: .9375rem;
+  }
+
+  .top-container {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .footer-link {
@@ -279,6 +452,36 @@ header {
   .two-line-link {
     line-height: 1.2;
   }
+
+  .lister-row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: .9375rem;
+  }
+
+  .lister-profile {
+    border-bottom: 1px #333 solid;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: .9375rem;
+    margin-right: .9375rem;
+  }
+
+  .ride-description {
+    border-bottom: 1px #333 solid;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: .9375rem;
+    margin-right: .9375rem;
+  }
+
+  .cutoff-border {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: .9375rem;
+    margin-right: .9375rem;
+  }
+
 }
 
 

@@ -4,32 +4,27 @@ title: hate hate hsate
 
 .ride-detail-hero
 	img src="images/ride-detail-header.png" class="img-fluid ride-detail-header"
-	span.ride-detail-title Ride Title Truncated to 50 Characters
+	.ride-detail-title Ride Title Truncated to 50 Characters
 
-.container-fluid.p-x-0
-  .row.ride-meta-data
-    .col-xs-12.col-sm-6
-      .ride-specs
-      	span.ride-type
-      		img src="images/ride-detail-bicycle.png" class="ride-type-bicycle"
-      		Ride Type &middot Ride Sub Type
-      	span.ride-height
-      		Rider Height 6'0" - 6'2" (Bike is 54-56 cm)
-    .col-xs-12.col-sm-6.text-xs-center.ride-price
-  	  span.p-x-2 $10/Hour
-      span.p-x-2 $35/Day
-  	  span.p-x-2 $120/Week
-
-span.border-line.center-block
-
-.container.lister-main
+.container-fluid.ride-meta-data
   .row
-    .col-xs-12.col-sm-6
+    .col-sm-6.col-xs-12.ride-specs
+      img src="images/ride-detail-bicycle.png" class="ride-type-bicycle"
+      span.ride-type Ride Type &middot Ride Subtype
+      span.ride-height Rider Height 6'0" - 6'2" (Bike is 54-56 cm)
+    .col-sm-6.col-xs-12.text-xs-center.ride-price
+      span.col-xs-4.col-sm-4 $10/Hour
+      span.col-xs-4.col-sm-4 $35/Day
+      span.col-xs-4.col-sm-4.last-price $120/Week
+
+.container.lister-main.cutoff-border.wrap
+  .row.lister-row
+    .col-xs-12.col-sm-6.lister-profile
     	.media
     	  	.media-left.media-middle
     	    	a href="#"
     	      		img.media-object alt=("Lister Profile Image") src="images/lister-profile.png"
-    	  	.media-body.lister-profile
+    	  	.media-body.lister-info
     	    	h4.media-heading.lister-name Jonathan T.
     	    	span.lister-review-number 12 Reviews
     	    	img.lister-stars src="images/review-stars-small.png"
@@ -54,29 +49,19 @@ span.border-line.center-block
             .media-body
               h4.extra-font Helmet
 
-span.border-line.center-block
-
-.container.ride-description
+.container.ride-description.wrap
   .row
     .col-xs-12
       p I love this bike. Fast as hell, and looks mean. This bike is a stud. It carried me to my 2nd Ironman finish and some podiums on some shorter tri's. Fast, mean, and does not take prisoners.
 
       p 2010 Cervelo P3 56cm; Shimano Dura Ace with Quark Power meter. HED trispoke tubulars or Easton Aluminum clinchers. HED carbon disc tubular available (up charge $25/day). Speedplay or Look Keo pedals. Aero helmet and spare tube supplies available... Read More
 
-span.border-line.center-block
+.container.review-header.wrap
+  span.review-header-font 12 Reviews
+  = image_tag 'review-stars-large.png', class: 'review-header-stars'
 
-.container
-  .row
-    .col-sm-4
-      .media.review-header
-        .media-body
-          h1.media-heading 12 Reviews
-        .media-right
-          .media-object
-            img.review-header-stars src="images/review-stars-large.png"
-
-.container
-  .row
+.container.review-main.cutoff-border.wrap
+  .row.review-row
     .col-xs-12
       .media.profile-review
           .media-left
@@ -89,10 +74,8 @@ span.border-line.center-block
             p.review-time 18 days ago
             p awesome bike rental! had fun with the bike and marcelo made it reallyeasy to know where to pick up, and even accommodated the location!
 
-span.border-line.center-block
-
-.container
-  .row
+.container.review-main.cutoff-border.wrap
+  .row.review-row
     .col-xs-12
       .media.profile-review
           .media-left
@@ -105,10 +88,8 @@ span.border-line.center-block
             p.review-time 18 days ago
             p awesome bike rental! had fun with the bike and marcelo made it reallyeasy to know where to pick up, and even accommodated the location!
 
-span.border-line.center-block
-
-.container
-  .row
+.container.review-main.cutoff-border.wrap
+  .row.review-row
     .col-xs-12
       .media.profile-review
           .media-left
@@ -121,25 +102,21 @@ span.border-line.center-block
             p.review-time 18 days ago
             p Perfect experience! Marcelo was extremely nice, helpful, and willing to work around my schedule. Will definitely be renting from him again :)
 
-span.border-line.center-block
-
 a href="#"
 	p.review-link See More Reviews
 
-.profile-and-cover
+.profile-and-cover.wrap
 	img.img-fluid.profile-cover src="images/profile-background.png"
 	img.img-fluid.profile-pic.center-block src="images/lister-profile-large.png"
 
-.container
+.container.lister-description.cutoff-border.wrap
   .row
     .col-xs-12
       h2 Jonathan T.
       span.join-date Joined April 2015
       p.about-me I'm a bike adict who wants to share my rides for a good price.
 
-span.border-line.center-block
-
-.container.verification-bubbles
+.container.verification-bubbles.cutoff-border.wrap
   .row
     .col-xs-12.m-b-1
       span.verifications Verifications
@@ -154,9 +131,7 @@ span.border-line.center-block
       img src="images/twitter-verification.png"
       span.verify-text Twitter
 
-span.border-line.center-block
-
-.container.stats-lister-all
+.container.stats-lister-all.cutoff-border.wrap
   .row
     .col-xs-6.text-xs-center
       span.stats-lister Response Rate
@@ -174,9 +149,7 @@ span.border-line.center-block
       span.stats-lister Last Seen
       h3 2 days ago
 
-span.border-line.center-block
-
-.container.location-header.text-xs-center
+.container.location-header.text-xs-center.wrap
   .row
     .col-xs-12
       h2 3rd Street Promenade
@@ -184,12 +157,12 @@ span.border-line.center-block
 
 img.img-fluid src="images/map-image.png"
 
-.container.similar-rides.text-xs-center
+.container.similar-rides.text-xs-center.wrap
   .row
     .col-xs-12
       h2 Similar Road Bikes in Santa Monica
 
-.container-fluid.p-x-0
+.container-fluid.p-x-0.wrap
   .row
     .col-xs-12.col-sm-6.p-x-0
       .card.card-inverse
