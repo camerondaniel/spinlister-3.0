@@ -4,18 +4,20 @@ title: hate hate hsate
 
 .ride-detail-hero
 	img src="images/ride-detail-header.png" class="img-fluid ride-detail-header"
-	.ride-detail-title Ride Title Truncated to 50 Characters
+	.container
+    .ride-detail-title Ride Title Truncated to 50 Characters
 
-.container-fluid.ride-meta-data
-  .row
-    .col-sm-6.col-xs-12.ride-specs
-      img src="images/ride-detail-bicycle.png" class="ride-type-bicycle"
-      span.ride-type Ride Type &middot Ride Subtype
-      span.ride-height Rider Height 6'0" - 6'2" (Bike is 54-56 cm)
-    .col-sm-6.col-xs-12.text-xs-center.ride-price
-      span.col-xs-4.col-sm-4 $10/Hour
-      span.col-xs-4.col-sm-4 $35/Day
-      span.col-xs-4.col-sm-4.last-price $120/Week
+.ride-meta-data
+  .container.wrap-specs
+    .row
+      .col-sm-6.col-xs-12.ride-specs
+        img src="images/ride-detail-bicycle.png" class="ride-type-bicycle"
+        span.ride-type Ride Type &middot Ride Subtype
+        span.ride-height Rider Height 6'0" - 6'2" (Bike is 54-56 cm)
+      .col-sm-6.col-xs-12.text-xs-center.ride-price.wrap
+        span.col-xs-4.col-sm-4 $10/Hour
+        span.col-xs-4.col-sm-4 $35/Day
+        span.col-xs-4.col-sm-4.last-price $120/Week
 
 .container.lister-main.cutoff-border.wrap
   .row.lister-row
@@ -162,9 +164,9 @@ img.img-fluid src="images/map-image.png"
     .col-xs-12
       h2 Similar Road Bikes in Santa Monica
 
-.container-fluid.p-x-0.wrap
+.container-fluid.p-x-0
   .row
-    .col-xs-12.col-sm-6.p-x-0
+    .col-xs-12.col-sm-6.col-md-4.p-x-0
       .card.card-inverse
         img.card-img src="images/ride-card.png"
         .card-img-overlay
@@ -174,7 +176,7 @@ img.img-fluid src="images/map-image.png"
               p.card-text $25 &middot Bike &middot Road Bike &middot 6'0" - 6'2"
             .col-xs-3
               img.card-text.card-profile-pic.p-r-1 src="images/ride-card-profile.png"
-    .col-xs-12.col-sm-6.p-x-0
+    .col-xs-12.col-sm-6.col-md-4.p-x-0
       .card.card-inverse
         img.card-img src="images/ride-card-2.png"
         .card-img-overlay
@@ -184,7 +186,7 @@ img.img-fluid src="images/map-image.png"
               p.card-text $25 &middot Bike &middot Road Bike &middot 6'0" - 6'2"
             .col-xs-3
               img.card-text.card-profile-pic.p-r-1 src="images/ride-card-profile.png"
-    .col-xs-12.col-sm-6.p-x-0
+    .col-xs-12.col-sm-6.col-md-4.p-x-0
       .card.card-inverse
         img.card-img src="images/ride-card-3.png"
         .card-img-overlay
