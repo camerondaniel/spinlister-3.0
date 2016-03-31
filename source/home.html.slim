@@ -1,0 +1,95 @@
+---
+title: Homepage Slice N' Dice
+---
+
+.home-hero
+	img src="images/home-hero.png" class="img-fluid home-hero-image"
+	.container
+		.row
+			.home-title Rent a bike from someone like you
+			.home-subtitle Save money, meet awesome people, and consume less
+
+		.row.home-search
+			input.form-control.form-control-lg.search-input placeholder= 'Where would you like to rent?' type= 'text' 
+			input.form-control.form-control-lg.form-inline.pickup-box type= "text" placeholder= "Pickup Date"
+			input.form-control.form-control-lg.form-inline.dropoff-box type= "text" placeholder= "Dropoff Date"
+			button.btn.btn-primary.search-button Search
+
+		.row.icon-row
+			.media.carousel-icon
+				.media-left.media-middle
+					img class="home-icon" src="images/bike-icon.png"
+				.media-body
+					.media-heading
+						p.icon-text Bikes
+
+			.media.carousel-icon.middle-icon
+				.media-left.media-middle
+					img class="home-icon" src="images/surf-icon.png"
+				.media-body
+					.media-heading
+						p.icon-text Surf
+
+			.media.carousel-icon
+				.media-left.media-middle
+					img class="home-icon" src="images/snow-icon.png"
+				.media-body
+					.media-heading
+						p.icon-text Snow
+
+.container.card-container
+	.row
+		.col-xs-6.card-column
+			.card
+				img class="card-img" src="images/card-amsterdam.png"
+				.card-img-overlay.overlay-left
+					h4.card-title Amsterdam
+		.col-xs-6.card-column
+			.card
+				img class="card-img" src="images/card-sf.png"
+				.card-img-overlay
+					h4.card-title San Francisco
+	.row
+		.col-xs-6.card-column
+			.card
+				img class="card-img" src="images/card-la.png"
+				.card-img-overlay.overlay-left
+					h4.card-title Los Angeles
+		.col-xs-6.card-column
+			.card
+				img class="card-img" src="images/card-ny.png"
+				.card-img-overlay
+					h4.card-title New York
+	.row
+		.col-xs-6.card-column
+			.card
+				img class="card-img" src="images/card-portland.png"
+				.card-img-overlay.overlay-left
+					h4.card-title Portland
+		.col-xs-6.card-column
+			.card
+				img class="card-img" src="images/card-london.png"
+				.card-img-overlay
+					h4.card-title London
+
+.bottom-home
+	.container
+		.row
+			.col-xs-12.col-lg-6
+				h1.make-money Make money from your bike, surfboard, or snowboard
+				p.bottom-text.first-bottom-text Make up to $500/month by sharing your bike, surfboard, SUP, snowboard or skis with travelers, racers, and enthusiasts.
+				.media
+					.media-left
+						img class="spin-shield" src="images/logo-shield.png"
+					.media-body
+						.media-heading
+							p.bottom-text.second-bottom-text Listers' bikes are protected against damage up to $10,000. Messages, reviews, identity verification & payment are all handled by Spinlister so your private information is safe.
+							= link_to 'Read More', '#', class: 'read-more'
+			.col-xs-12.col-lg-6
+				button.btn.btn-primary.list-button List a Ride
+				.media.video-link
+					.media-left
+						img class="play" src="images/play-button.png"
+					.media-body
+						.media-heading
+							p.video-text Watch the video

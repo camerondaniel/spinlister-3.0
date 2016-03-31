@@ -28,7 +28,7 @@ header {
 }
 
 .logo {
-  padding-top: .308rem;
+  padding-top: .75rem;
 }
 
 .form-inline {
@@ -76,6 +76,10 @@ header {
   font-family: HelveticaNeue;
   font-size: 1.077rem;
   font-weight: 500;
+}
+
+.mobile-bar {
+  padding-top: .3rem;
 }
 
 .ride-detail-hero {
@@ -504,6 +508,197 @@ header {
 
 }
 
+.home {
+
+  .home-hero {
+    position: relative;
+  }
+
+  .home-hero-image {
+    height: 360px;
+    width: auto;
+    max-width: none;
+  }
+
+  .home-title {
+    position: absolute;
+    top: 21%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1.538rem;
+    font-weight: 400;
+    color: white;
+  }
+
+  .home-subtitle {
+    position: absolute;
+    top: 29%;
+    left: 15%;
+    text-align: center;
+    width: 70%;
+    font-weight: 500;
+    color: white;
+  }
+
+  .home-search {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .search-input {
+    border-width: 1px;
+    border-bottom: 1px #ccc solid;
+    border-radius: .3333rem .3333rem 0 0;
+    padding: 1rem 1.25rem;
+    height: 2.75rem;
+  }
+
+  .pickup-box {
+    width: 50%;
+    border-radius: 0;
+    border-right: 1px #ccc solid;
+    padding: 1rem 1.25rem;
+    height: 2.7rem;
+  }
+
+  .dropoff-box {
+    width: 50%;
+    border-radius: 0;
+    padding: 1rem 1.25rem;
+    height: 2.7rem;
+  }
+
+  .search-button {
+    width: 100%;
+    height: 3.4rem;
+  }
+
+  .icon-row {
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+  }
+
+  .carousel-icon {
+    width: 33.333%;
+    padding-left: 1.7rem;
+  }
+
+  .middle-icon {
+    padding-left: 2.1rem;
+  }
+
+  .icon-text {
+    font-weight: 500;
+    padding-top: .8rem;
+  }
+
+  .card-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card-column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .overlay-left {
+    padding-left: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.385rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: .8rem;
+  }
+
+  .bottom-home {
+    background-image: url("../images/home-footer-img.png");
+    background-position: center center
+  }
+
+  .make-money {
+    padding-top: 2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+
+  .bottom-text {
+    font-weight: 400;
+    color: #ddd;
+  }
+
+  .first-bottom-text {
+    padding-top: .5rem;
+  }
+
+  .second-bottom-text {
+    margin-bottom: 0;
+  }
+
+  .list-button {
+    width: 100%;
+  }
+
+  .play {
+    height: 14px;
+  }
+
+  .video-link {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-left: 27%;
+    margin-bottom: .2rem;
+  }
+
+  .video-text {
+    font-size: 1.154rem;
+    font-weight: 500;
+  }
+
+  .btn-primary {
+    font-size: 1.231rem;
+    font-weight: 500;
+  }
+
+  @media (max-width: 543px) {
+
+    .search-form {
+      display: none !important;
+    }
+
+  }
+
+  @media (min-width: 375px) {
+
+    .video-link {
+      padding-left: 31%;
+    }
+  }
+
+  @media (min-width: 425px) {
+
+    .video-link {
+      padding-left: 34%;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .list-button {
+      margin-left: 15%;
+      width: 70%;
+    }
+  }
+
+}
 
 
 
