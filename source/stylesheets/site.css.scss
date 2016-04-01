@@ -698,6 +698,7 @@ header {
     .video-link {
       padding-left: 31%;
     }
+
   }
 
   @media (min-width: 425px) {
@@ -721,6 +722,7 @@ header {
     .video-link {
       padding-left: 34%;
     }
+
   }
 
   @media (min-width: 768px) {
@@ -763,6 +765,7 @@ header {
       margin-left: 15%;
       width: 70%;
     }
+
   }
 
   @media (min-width: 1024px) {
@@ -806,6 +809,47 @@ header {
     .search-button {
       width: 19%;
       margin-left: 1%;
+    }
+
+    .icon-row {
+      bottom: 21%;
+      width: 56%;
+      right: 21%;
+    }
+
+    .middle-icon {
+      padding-left: 3.5rem;
+    }
+
+    .bottom-home {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .list-button {
+      margin-top: 5rem;
+      width: 80%;
+    }
+
+  }
+
+  @media (min-width: 1440px) {
+
+    .icon-row {
+      right: 18%;
+    }
+
+    .bottom-home {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    .list-button {
+      margin-top: 4rem;
+    }
+
+    .video-link {
+      padding-left: 41%;
     }
   }
 
