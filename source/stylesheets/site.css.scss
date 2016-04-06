@@ -821,6 +821,11 @@ header {
       padding-bottom: 23px;
     }
 
+    .bottom-home {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
   }
 
   @media (min-width: 1100px) {
@@ -849,6 +854,7 @@ header {
       padding-top: 38px;
       padding-bottom: 48px;
     }
+
   }
 
   @media (min-width: 1440px) {
@@ -893,11 +899,6 @@ header {
 
     .card-title {
       font-size: 2rem;
-    }
-
-    .bottom-home {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
     }
 
     .list-button {
