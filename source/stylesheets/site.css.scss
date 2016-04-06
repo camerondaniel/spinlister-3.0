@@ -557,6 +557,8 @@ header {
   }
 
   .home-search {
+    width: 81.2%;
+    margin-left: 9.375%;
     margin-top: 19px;
   }
 
@@ -760,24 +762,31 @@ header {
 
   @media (min-width: 992px) {
 
+    .hero-container {
+      width: 59.85%;
+    }
+
     .home-title {
-      font-size: 2.7rem;
-      padding-top: 20px;
+      font-size: 2.93rem;
+      font-weight: 400;
+      padding-top: 60px;
     }
 
     .home-subtitle {
-      font-size: 1.4rem;
-      padding-top: 5px;
+      font-size: 1.638rem;
+      font-weight: 500;
+      padding-top: 14px;
     }
 
-    .home-search {
-      margin-top: 48px;
+   .home-search {
+      margin-top: 71px;
+      width: 100%;
     }
 
     .search-input {
       display: inline;
       width: 40%;
-      height: 3.4rem;
+      height: 44px;
       border-radius: 0.462rem 0 0 0.462rem;
       border-right: solid 1px #ccc;
       border-bottom: none;
@@ -785,24 +794,37 @@ header {
     }
 
     .pickup-box {
-      width: 20%;
-      height: 3.4rem;
+      width: 19%;
+      height: 44px;
     }
 
     .dropoff-box {
-      width: 20%;
-      height: 3.4rem;
+      width: 19.5%;
+      height: 44px;
       border-radius: 0 0.462rem 0.462rem 0;
     }
 
     .search-button {
-      width: 19%;
+      width: 20.5%;
       margin-left: 1%;
+      height: 44px;
       margin-bottom: 3px;
+    }
+
+    .carousel-icons {
+      padding-top: 82px;
     }
 
     .icon-row {
       padding-top: 12px;
+    }
+
+    .home-icon-bike {
+      padding-left: 32px;
+    }
+
+    .home-icon-snow {
+      padding-right: 14px;
     }
 
     .bottom-home {
@@ -840,14 +862,6 @@ header {
 
     .list-button {
       margin-top: 10%;
-    }
-
-    .home-title {
-      padding-top: 40px;
-    }
-
-    .home-search {
-      margin-top: 70px;
     }
 
     .icon-row {
