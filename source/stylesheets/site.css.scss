@@ -531,46 +531,33 @@ header {
 .home {
 
   .home-hero {
-    position: relative;
-  }
-
-  .home-hero-image {
-    height: 360px;
-    width: auto;
-    max-width: none;
+    background-image: url("../images/home-hero.png");
+    background-size: cover;
+    background-position: 41%;
   }
 
   .home-title {
-    position: absolute;
-    top: 21%;
-    left: 0;
-    text-align: center;
     width: 100%;
     font-size: 1.538rem;
     font-weight: 400;
     line-height: 1.538rem;
     color: white;
+    margin-top: 86px;
   }
 
   .home-subtitle {
-    position: absolute;
-    top: 29%;
-    left: 15%;
-    text-align: center;
-    width: 70%;
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.692rem;
     color: white;
+    margin-top: 5px;
+    width: 70%;
+    margin-left: 15%;
+
   }
 
   .home-search {
-    position: absolute;
-    top: 45%;
-    left: 10%;
-    width: 80%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-top: 19px;
   }
 
   .search-input {
@@ -582,6 +569,7 @@ header {
   }
 
   .pickup-box {
+    display: inline;
     width: 50%;
     border-radius: 0;
     border-right: 1px #ccc solid;
@@ -590,6 +578,7 @@ header {
   }
 
   .dropoff-box {
+    display: inline;
     width: 50%;
     border-radius: 0;
     padding: 1rem 1.25rem;
@@ -601,29 +590,22 @@ header {
     height: 3.4rem;
   }
 
-  .icon-row {
-    position: absolute;
-    bottom: 4%;
-    width: 100%;
-  }
-
-  .carousel-icon {
-    width: 33.333%;
-    padding-left: 1.7rem;
+  .carousel-icons {
+    padding-top: 32px;
+    padding-bottom: 28px;
   }
 
   .home-icon {
     height: 32px;
+    display: inline;
   }
 
-  .middle-icon {
-    padding-left: 2.1rem;
-  }
-
-  .icon-text {
+  .icon-text{
     font-weight: 500;
-    padding-top: .8rem;
     color: white;
+    padding-top: 6px;
+    padding-left: 10px;
+
   }
 
   .card-container {
@@ -707,19 +689,11 @@ header {
 
   }
 
-  @media (min-width: 375px) {
-
-    .carousel-icon {
-      padding-left: 2.2rem;
-    }
-
-    .middle-icon {
-      padding-left: 2.6rem;
-    }
-
-  }
-
   @media (min-width: 425px) {
+
+    .home-hero {
+      background-position: 44%;
+    }
 
     .home-title {
       font-size: 1.838rem;
@@ -729,46 +703,48 @@ header {
       font-size: 1.2rem;
     }
 
-    .carousel-icon {
-      padding-left: 2.8rem;
-    }
-
-    .middle-icon {
-      padding-left: 3rem;
-    }
-
-  }
-
-  @media (min-width: 768px) {
-
-    .home-hero-image {
-      height: 426px;
-    }
-
-    .home-title {
-      font-size: 2.1rem;
-    }
-
-    .home-subtitle {
-      font-size: 1.15rem;
-    }
-
-    .home-search {
-      left: 30%;
-      width: 40%;
-    }
-
-    .icon-row {
-      right: -5%;
+    .home-hero {
+      background-position: 49%;
     }
 
     .home-icon {
       height: 50px;
     }
 
+  }
+
+  @media (min-width: 544px) {
+
+    .home-title {
+      font-size: 2.1rem;
+      padding-top: 20px;
+    }
+
+    .home-search {
+      margin-top: 30px;
+    }
+
+    .icon-row {
+      width: 70%;
+      margin-left: 15%;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    .home-subtitle {
+      font-size: 1.15rem;
+    }
+
+    .icon-row {
+      padding-bottom: 12px;
+    }
+
     .icon-text {
       font-size: 1.3rem;
-      padding-top: 1rem;
     }
 
     .card-container {
@@ -783,39 +759,29 @@ header {
   }
 
   @media (min-width: 992px) {
-    .list-button {
-      margin-top: 20%;
-      width: 80%;
-      margin-left: 10%;
-    }
-
-  }
-
-  @media (min-width: 1024px) {
-
-    .home-hero-image {
-      height: 600px;
-    }
 
     .home-title {
       font-size: 2.7rem;
+      padding-top: 20px;
     }
 
     .home-subtitle {
       font-size: 1.4rem;
+      padding-top: 5px;
     }
 
     .home-search {
-      left: 20%;
-      width: 60%;
+      margin-top: 48px;
     }
 
     .search-input {
+      display: inline;
       width: 40%;
       height: 3.4rem;
       border-radius: 0.462rem 0 0 0.462rem;
       border-right: solid 1px #ccc;
       border-bottom: none;
+      padding-top: 10px;
     }
 
     .pickup-box {
@@ -832,21 +798,27 @@ header {
     .search-button {
       width: 19%;
       margin-left: 1%;
+      margin-bottom: 3px;
     }
 
     .icon-row {
-      bottom: 21%;
-      width: 56%;
-      right: 21%;
-    }
-
-    .middle-icon {
-      padding-left: 3.5rem;
+      padding-top: 12px;
     }
 
     .bottom-home {
       padding-top: 3rem;
       padding-bottom: 3rem;
+    }
+
+     .list-button {
+      margin-top: 20%;
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    .icon-row {
+      padding-top: 15px;
+      padding-bottom: 23px;
     }
 
   }
@@ -864,13 +836,22 @@ header {
     .list-button {
       margin-top: 10%;
     }
+
+    .home-title {
+      padding-top: 40px;
+    }
+
+    .home-search {
+      margin-top: 70px;
+    }
+
+    .icon-row {
+      padding-top: 38px;
+      padding-bottom: 48px;
+    }
   }
 
   @media (min-width: 1440px) {
-
-    .home-hero-image {
-      height: 1080px;
-    }
 
     .home-title {
       font-size: 4rem;
@@ -878,16 +859,36 @@ header {
 
     .home-subtitle {
       font-size: 2rem;
-      top: 26%;
+      padding-top: 22px;
     }
 
-    .home-search {
-      top: 37%;
+    .search-input {
+      height: 4.5rem;
+    }
+
+    .pickup-box {
+      height: 4.5rem;
+    }
+
+    .dropoff-box {
+      height: 4.5rem;
+    }
+
+    .search-button {
+      height: 4.5rem;
+    }
+
+    .home-icon {
+      height: 75px;
     }
 
     .icon-row {
-      right: 18%;
-      bottom: 38%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .icon-text {
+      font-size: 1.8rem;
     }
 
     .card-title {
@@ -901,18 +902,6 @@ header {
 
     .list-button {
       margin-top: 4rem;
-    }
-
-  }
-
-  @media (min-width: 1925px) {
-
-    .home-title {
-      font-size: 5.8rem;
-    }
-
-    .home-subtitle {
-      font-size: 3rem;
     }
 
   }
