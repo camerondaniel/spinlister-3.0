@@ -540,26 +540,23 @@ header {
     width: 100%;
     font-size: 1.538rem;
     font-weight: 400;
-    line-height: 1.538rem;
     color: white;
-    margin-top: 86px;
+    margin-top: 81px;
   }
 
   .home-subtitle {
     font-size: 1.1rem;
     font-weight: 500;
-    line-height: 1.692rem;
     color: white;
-    margin-top: 5px;
+    margin-top: 1px;
     width: 70%;
     margin-left: 15%;
-
   }
 
   .home-search {
     width: 81.2%;
     margin-left: 9.375%;
-    margin-top: 19px;
+    margin-top: 20px;
   }
 
   .search-input {
@@ -607,7 +604,6 @@ header {
     color: white;
     padding-top: 6px;
     padding-left: 10px;
-
   }
 
   .card-container {
@@ -633,14 +629,15 @@ header {
   }
 
   .bottom-home {
+    padding-top: 37px;
     background-image: url("../images/home-footer-img.png");
     background-position: center center
   }
 
   .make-money {
-    padding-top: 2rem;
     font-weight: 500;
     line-height: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .bottom-text {
@@ -650,10 +647,15 @@ header {
 
   .first-bottom-text {
     padding-top: .5rem;
+    margin-bottom: 9px;
   }
 
   .second-bottom-text {
     margin-bottom: 0;
+  }
+
+  .bottom-positioning {
+    padding-bottom: 2px;
   }
 
   .list-button {
@@ -669,7 +671,7 @@ header {
   .video-link {
     padding-top: 4rem;
     padding-bottom: 3rem;
-    margin-bottom: .2rem;
+    margin-bottom: .8rem;
   }
 
   .video-text {
@@ -691,11 +693,15 @@ header {
 
   }
 
-  @media (min-width: 425px) {
+  @media (min-width: 375px) {
 
     .home-hero {
-      background-position: 44%;
+      background-position: 45%;
     }
+
+  }
+
+  @media (min-width: 425px) {
 
     .home-title {
       font-size: 1.838rem;
@@ -706,7 +712,7 @@ header {
     }
 
     .home-hero {
-      background-position: 49%;
+      background-position: 48%;
     }
 
     .home-icon {
