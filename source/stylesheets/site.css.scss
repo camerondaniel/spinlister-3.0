@@ -573,7 +573,7 @@ header {
     border-radius: 0;
     border-right: 1px #ccc solid;
     padding: 1rem 1.25rem;
-    height: 2.7rem;
+    height: 2.75rem;
   }
 
   .dropoff-box {
@@ -581,7 +581,7 @@ header {
     width: 50%;
     border-radius: 0;
     padding: 1rem 1.25rem;
-    height: 2.7rem;
+    height: 2.75rem;
   }
 
   .search-button {
@@ -715,6 +715,11 @@ header {
       background-position: 48%;
     }
 
+    .home-search {
+      width: 70%;
+      margin-left: 15%;
+    }
+
     .home-icon {
       height: 50px;
     }
@@ -723,40 +728,61 @@ header {
 
   @media (min-width: 544px) {
 
+    .hero-container {
+      max-width: 100%;
+    }
+
     .home-title {
-      font-size: 2.1rem;
+      font-size: 2.77rem;
       padding-top: 20px;
     }
 
-    .home-search {
-      margin-top: 30px;
-    }
-
-    .icon-row {
-      width: 70%;
-      margin-left: 15%;
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-  }
-
-  @media (min-width: 768px) {
-
     .home-subtitle {
-      font-size: 1.15rem;
+      font-size: 1.485rem;
+      width: 96%;
+      margin-left: 2%;
+    }
+
+    .home-search {
+      margin-top: 40px;
+      margin-left: 18%;
+      width: 64%;
+    }
+
+    .search-input {
+      height: 45px;
+    }
+
+    .pickup-box {
+      height: 44px;
+    }
+
+    .dropoff-box {
+      height: 44px;
+    }
+
+    .search-button {
+      height: 44px;
     }
 
     .icon-row {
-      padding-bottom: 12px;
+      width: 100%;
+      margin-left: 1%;
+      padding-top: 25px;
+      padding-bottom: 2px;
+    }
+
+    .carousel-icons {
+      padding-top: 26px;
+    }
+
+    .icon-padding {
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .icon-text {
       font-size: 1.3rem;
-    }
-
-    .card-container {
-      max-width: 100%;
     }
 
     .list-button {
@@ -766,33 +792,48 @@ header {
 
   }
 
+  @media (min-width: 768px) {
+
+    .home-search {
+      margin-left: 27%;
+      width: 46%;
+    }
+
+    .card-container {
+      max-width: 100%;
+    }
+
+  }
+
   @media (min-width: 992px) {
 
     .hero-container {
-      width: 59.85%;
+      width: 100%;
     }
 
     .home-title {
       font-size: 2.93rem;
       font-weight: 400;
-      padding-top: 60px;
+      padding-top: 49px;
     }
 
     .home-subtitle {
       font-size: 1.638rem;
       font-weight: 500;
-      padding-top: 14px;
+      padding-top: 0;
     }
 
    .home-search {
-      margin-top: 71px;
-      width: 100%;
+      margin-top: 61px;
+      width: 78%;
+      margin-left: 11%;
+      height: 44px;
     }
 
     .search-input {
       display: inline;
       width: 40%;
-      height: 44px;
+      height: 100%;
       border-radius: 0.462rem 0 0 0.462rem;
       border-right: solid 1px #ccc;
       border-bottom: none;
@@ -801,19 +842,19 @@ header {
 
     .pickup-box {
       width: 19%;
-      height: 44px;
+      height: 100%;
     }
 
     .dropoff-box {
       width: 19.5%;
-      height: 44px;
+      height: 100%;
       border-radius: 0 0.462rem 0.462rem 0;
     }
 
     .search-button {
       width: 20.5%;
       margin-left: 1%;
-      height: 44px;
+      height: 100%;
       margin-bottom: 3px;
     }
 
@@ -822,7 +863,9 @@ header {
     }
 
     .icon-row {
-      padding-top: 12px;
+      padding-top: 39px;
+      margin-left: 4%;
+      width: 92%;
     }
 
     .home-icon-bike {
@@ -844,11 +887,6 @@ header {
       margin-left: 10%;
     }
 
-    .icon-row {
-      padding-top: 15px;
-      padding-bottom: 23px;
-    }
-
     .bottom-home {
       padding-top: 6rem;
       padding-bottom: 6rem;
@@ -860,6 +898,16 @@ header {
 
     .list-button {
       margin-top: 15%;
+    }
+
+    .home-search {
+      width: 70%;
+      margin-left: 15%;
+    }
+
+    .icon-row {
+      margin-left: 15%;
+      width: 70%;
     }
 
   }
@@ -877,44 +925,41 @@ header {
 
   }
 
+  @media (min-width: 1300px) {
+
+    .home-search {
+      width: 60%;
+      margin-left: 20%;
+    }
+
+  }
+
   @media (min-width: 1440px) {
 
     .home-title {
-      font-size: 4rem;
+      padding-top: 62px;
+      font-size: 3.18rem;
+      font-weight: 400;
     }
 
     .home-subtitle {
-      font-size: 2rem;
-      padding-top: 22px;
+      font-size: 1.85rem;
     }
 
-    .search-input {
-      height: 4.5rem;
-    }
-
-    .pickup-box {
-      height: 4.5rem;
-    }
-
-    .dropoff-box {
-      height: 4.5rem;
-    }
-
-    .search-button {
-      height: 4.5rem;
-    }
-
-    .home-icon {
-      height: 75px;
+    .home-search {
+      margin-top: 68px;
+      height: 48px;
     }
 
     .icon-row {
-      margin-top: 50px;
-      margin-bottom: 50px;
+      margin-top: 18px;
+      margin-bottom: 0;
+      padding-bottom: 26px;
     }
 
-    .icon-text {
-      font-size: 1.8rem;
+    .home-icon {
+      height: 56px;
+      font-size: 1.5rem;
     }
 
     .card-title {
@@ -926,6 +971,79 @@ header {
     }
 
   }
+
+@media (min-width: 1700px) {
+
+  .home-title {
+    font-size: 3.8rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.9rem;
+  }
+
+  .icon-row {
+    margin-top: 28px;
+    margin-bottom: 0;
+    padding-bottom: 36px;
+  }
+
+}
+
+@media (min-width: 2600px) {
+
+  .home-title {
+    padding-top: 173px;
+    font-size: 5.75rem;
+  }
+
+  .home-subtitle {
+    font-size: 3.3rem;
+  }
+
+  .home-search {
+    margin-top: 127px;
+    height: 87px;
+  }
+
+  .search-input {
+    height: 100%;
+    padding-top: 12px;
+    font-size: 2.8rem;
+    border-radius: .75rem 0 0 .75rem;
+    border-width: 0;
+  }
+
+  .pickup-box {
+    font-size: 2.8rem;
+  }
+
+  .dropoff-box {
+    font-size: 2.8rem;
+    border-radius: 0 .75rem .75rem 0;
+  }
+
+  .search-button {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+    border-radius: .75rem;
+  }
+
+  .home-icon {
+    height: 100px;
+  }
+
+  .icon-text {
+    font-size: 2.6rem;
+  }
+
+  .icon-row {
+    margin-top: 128px;
+    margin-left: 17%;
+    width: 66%;
+    margin-bottom: 36px;
+  }
+}
 
 }
 
