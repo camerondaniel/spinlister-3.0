@@ -342,8 +342,16 @@ header {
 }
 
 .link-row {
+  width: 90%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  border-top: 1px #333 solid;
+  margin-top: 70px;
+}
+
+.footer-wrap {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-1 {
@@ -352,7 +360,7 @@ header {
 
 .footer-link {
     color: #bbb;
-    font-size: .923rem;
+    font-size: .78rem;
     font-weight: 400;
     text-decoration: none;
   }
@@ -365,17 +373,22 @@ header {
   .form-inline {
     padding-left: 2.55rem;
   }
-}
 
-@media (max-width: 353px) {
   .footer-link {
-    font-size: .78rem;
+    font-size: .9rem;
   }
 }
 
-@media (min-width: 530px) {
+@media (min-width: 395px) {
   .footer-link {
-    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 476px) {
+  .footer-wrap {
+    padding-left: .9375rem;
+    padding-right: .9375rem;
   }
 }
 
@@ -393,13 +406,6 @@ header {
   .form-inline {
     padding-left: .55rem;
     padding-top: .15rem;
-  }
-
-  .footer-link {
-    color: #bbb;
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: none;
   }
 
   .ride-detail-title {
@@ -478,11 +484,13 @@ header {
     padding-left: 0;
   }
 
-  .link-row {
-    margin-left: 0;
-    font-size: 1rem;
-  }
+}
 
+@media (min-width: 626px) {
+  .footer-wrap {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
 
 @include media-breakpoint-up(md) {
@@ -510,20 +518,48 @@ header {
     padding-top: 2%;
   }
 
-  .link-row {
-    width: 50%;
+  .footer-wrap {
+    padding-left: 0;
+    padding-right: .8rem;
+    text-align: left !important;
   }
 
-  .footer-2 {
-    padding-top: 7px;
+  .copyright {
+    font-size: .8rem;
+    padding-right: 0;
+  }
+
+  .footer-link {
+    font-size: .8rem;
+  }
+
+  .footer-1 {
+    line-height: 1;
   }
 
 }
 
-@media (min-width: 1126px) {
+@include media-breakpoint-up(lg) {
 
-  .footer-2 {
-    padding-top: 0;
+  .footer-link {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1458px) {
+  .footer-1 {
+    line-height: 1.5;
+    margin-right: 20px;
+  }
+
+  .copyright {
+    flex: 0 0 47.94%;
   }
 
 }
@@ -607,9 +643,8 @@ header {
   }
 
   .card-container {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: none;
+    width: 100%;
+    max-width: 100%;
   }
 
   .card-column {
@@ -617,8 +652,12 @@ header {
     padding-right: 0;
   }
 
-  .overlay-left {
-    padding-left: 2rem;
+  .card {
+    border-radius: 0;
+  }
+
+  .card-img {
+    border-radius: 0;
   }
 
   .card-title {
