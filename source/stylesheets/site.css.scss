@@ -720,6 +720,10 @@ header {
     font-size: 1.3rem;
   }
 
+  .spin-shield {
+    height: 44px;
+  }
+
   .bottom-text {
     font-weight: 400;
     color: #ddd;
@@ -997,9 +1001,13 @@ header {
     }
 
      .list-button {
-      margin-top: 20%;
+      margin-top: 16%;
       width: 80%;
       margin-left: 10%;
+    }
+
+    .video-link {
+      padding-top: 2rem;
     }
 
     .bottom-home {
@@ -1054,8 +1062,19 @@ header {
       padding-top: 12px
     }
 
+    .bottom-home {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+
     .search-button {
       height: 44px;
+    }
+
+    .list-button {
+      margin-top: 8%;
+      width: 70%;
+      margin-left: 15%;
     }
   }
 
@@ -1092,7 +1111,7 @@ header {
     }
 
     .list-button {
-      margin-top: 4rem;
+      margin-top: 6%;
     }
 
   }
@@ -1111,6 +1130,12 @@ header {
     margin-top: 28px;
     margin-bottom: 0;
     padding-bottom: 36px;
+  }
+
+  .list-button {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 4%;
   }
 
 }
@@ -1192,12 +1217,43 @@ header {
     margin-bottom: 36px;
   }
 
+  .bottom-home {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  .make-money {
+    font-size: 2.4rem;
+  }
+
+  .first-bottom-text {
+    font-size: 2.1rem;
+  }
+
+  .second-bottom-text {
+    font-size: 2.1rem;
+  }
+
+  .read-more {
+    font-size: 2.1rem;
+  }
+
   .list-button {
     height: 80px;
     width: 70%;
     margin-left: 15%;
     border-radius: .615rem;
     font-size: 2.4rem;
+  }
+
+  .play {
+    height: 24px;
+    margin-bottom: 11px;
+    padding-right: 8px;
+  }
+
+  .video-text {
+    font-size: 2.3rem;
   }
 }
 
