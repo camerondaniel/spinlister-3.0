@@ -8,12 +8,21 @@ title: Homepage Slice N' Dice
 			.home-title.text-xs-center Rent a <u>bike</u> from someone like you
 			.home-subtitle.text-xs-center Save money, meet awesome people, and consume less
 
+	.container.search-container
 		.row
-			.home-search
+			.input-group.input-group-search
+				span.input-group-addon.addon-1
+					img src="images/search-icon.png"
 				input.form-control.form-control-lg.form-inline.search-input placeholder= 'Where would you like to rent?' type= 'text'
+			.input-group.input-group-calendar-1
+				span.input-group-addon.addon-2
+					img src="images/calendar-icon.png"
 				input.form-control.form-control-lg.form-inline.pickup-box type= "text" placeholder= "Pickup Date"
+			.input-group.input-group-calendar-2
+				span.input-group-addon.addon-2
+					img src="images/calendar-icon.png"
 				input.form-control.form-control-lg.form-inline.dropoff-box type= "text" placeholder= "Dropoff Date"
-				button.btn.btn-primary.search-button Search
+			button.btn.btn-primary.search-button Search
 
 	.container.carousel-icons
 		.row.icon-row

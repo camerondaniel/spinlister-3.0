@@ -564,7 +564,7 @@ header {
 
 }
 
-.home {
+.index {
 
   .home-hero {
     background-image: url("../images/home-hero.png");
@@ -589,40 +589,73 @@ header {
     margin-left: 15%;
   }
 
-  .home-search {
-    width: 81.2%;
-    margin-left: 9.375%;
-    margin-top: 20px;
+  .search-container {
+    width: 82%;
+    padding: 0;
+    margin-top: 28px;
+  }
+
+  .input-group-search {
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+
+  .addon-1 {
+    background-color: white;
+    border-bottom-left-radius: 0;
+    padding-top: 10px;
+    padding-left: 11px;
   }
 
   .search-input {
-    border-width: 1px;
-    border-bottom: 1px #ccc solid;
-    border-radius: .3333rem .3333rem 0 0;
-    padding: 1rem 1.25rem;
-    height: 2.75rem;
+    border-bottom-right-radius: 0;
+    font-size: 15px;
+    border-top-right-radius: .25rem;
+  }
+
+  .input-group-calendar-1 {
+    padding: 0;
+    border-right: 1px solid #ccc;
+    width: 50%;
+  }
+
+  .input-group-calendar-2 {
+    padding: 0;
+    width: 50%;
+  }
+
+  .addon-2 {
+    background-color: white;
+    border-radius: 0;
+    padding-top: 9px;
+    padding-left: 10px;
+  }
+
+  .addon-3 {
+    background-color: white;
+    border-radius: 0;
+    padding-top: 9px;
+    padding-left: 10px;
   }
 
   .pickup-box {
-    display: inline;
-    width: 50%;
     border-radius: 0;
-    border-right: 1px #ccc solid;
-    padding: 1rem 1.25rem;
-    height: 2.75rem;
+    font-size: 14px;
   }
 
   .dropoff-box {
-    display: inline;
-    width: 50%;
     border-radius: 0;
-    padding: 1rem 1.25rem;
-    height: 2.75rem;
+    font-size: 14px;
+  }
+
+  .form-control {
+    color: #aaa;
   }
 
   .search-button {
+    height: 40px;
     width: 100%;
-    height: 3.4rem;
   }
 
   .carousel-icons {
@@ -724,18 +757,14 @@ header {
     font-weight: 500;
   }
 
-  @media (max-width: 543px) {
-
-    .search-form {
-      display: none !important;
-    }
-
-  }
-
   @media (min-width: 375px) {
 
     .home-hero {
       background-position: 45%;
+    }
+
+    .form-inline {
+      padding-left: 3px;
     }
 
   }
@@ -782,26 +811,28 @@ header {
       margin-left: 2%;
     }
 
-    .home-search {
-      margin-top: 40px;
-      margin-left: 18%;
-      width: 64%;
+    .search-container {
+      width: 60%;
     }
 
     .search-input {
-      height: 45px;
+      padding-top: 9px;
+    }
+
+    .addon-1 {
+      padding-top: 7px;
+    }
+
+    .addon-2 {
+      padding-top: 7px;
     }
 
     .pickup-box {
-      height: 44px;
+      padding-top: 8px;
     }
 
     .dropoff-box {
-      height: 44px;
-    }
-
-    .search-button {
-      height: 44px;
+      padding-top: 8px;
     }
 
     .icon-row {
@@ -842,6 +873,10 @@ header {
       max-width: 100%;
     }
 
+    .search-container {
+      width: 36%;
+    }
+
   }
 
   @media (min-width: 992px) {
@@ -862,39 +897,58 @@ header {
       padding-top: 0;
     }
 
-   .home-search {
-      margin-top: 61px;
-      width: 78%;
-      margin-left: 11%;
-      height: 44px;
-    }
+   .search-container {
+      width: 66%;
+   }
+
+   .input-group-search {
+    width: 40%;
+    border-bottom-left-radius: .462rem;
+   }
+
+   .input-group-calendar-1 {
+    width: 20%;
+    border-bottom: 1px solid #ccc;
+   }
+
+   .input-group-calendar-2 {
+    width: 20%;
+    border-bottom: 1px solid #ccc;
+    border-bottom-right-radius: .462rem;
+    border-bottom-right-radius: .462rem;
+   }
+
+   .search-button {
+    width: 19%;
+    margin-left: 1%;
+   }
 
     .search-input {
-      display: inline;
-      width: 40%;
       height: 100%;
       border-radius: 0.462rem 0 0 0.462rem;
       border-right: solid 1px #ccc;
       border-bottom: none;
+      padding-top: 11px;
+      padding-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .addon-1 {
+      border-radius: .462rem 0 0 .462rem;
       padding-top: 10px;
     }
 
-    .pickup-box {
-      width: 19%;
-      height: 100%;
+    .addon-2 {
+      padding-top: 9px;
+    }
+
+    .addon-3 {
+      padding-top: 9px;
     }
 
     .dropoff-box {
-      width: 19.5%;
-      height: 100%;
-      border-radius: 0 0.462rem 0.462rem 0;
-    }
-
-    .search-button {
-      width: 20.5%;
-      margin-left: 1%;
-      height: 100%;
-      margin-bottom: 3px;
+      border-top-right-radius: .462rem;
+      border-bottom-right-radius: .462rem;
     }
 
     .carousel-icons {
