@@ -3,170 +3,185 @@ title: hate hate hsate
 ---
 
 .ride-detail-hero
-	img src="images/ride-detail-header.png" class="img-fluid ride-detail-header"
-	.container
-    .ride-detail-title Ride Title Truncated to 50 Characters
+  .container
+    .row
+      .col-xs-12.ride-detail-title
+        span Ride Title Truncated to 50 Characters Goes Right Here
 
 .ride-meta-data
-  .container.wrap-specs
+  .container
     .row
-      .col-sm-6.col-xs-12.ride-specs
+      .col-sm-6.col-xs-12.ride-specs.p-y-1
         img src="images/ride-detail-bicycle.png" class="ride-type-bicycle"
         span.ride-type Ride Type &middot Ride Subtype
         span.ride-height Rider Height 6'0" - 6'2" (Bike is 54-56 cm)
-      .col-sm-6.col-xs-12.text-xs-center.ride-price.wrap
-        span.col-xs-4.col-sm-4 $10/Hour
-        span.col-xs-4.col-sm-4 $35/Day
-        span.col-xs-4.col-sm-4.last-price $120/Week
+      .col-sm-6.col-xs-12.text-xs-center.ride-price
+        .border-container.p-y-1.price-container
+          span.col-xs-4.price-1.text-xs-right $10/Hour
+          span.col-xs-4.text-xs-right $35/Day
+          span.col-xs-4.price-3.text-xs-right $120/Week
 
-.container.lister-main.cutoff-border.wrap
-  .row.lister-row
-    .col-xs-12.col-sm-6.lister-profile
-    	.media
-    	  	.media-left.media-middle
-    	    	a href="#"
-    	      		img.media-object alt=("Lister Profile Image") src="images/lister-profile.png"
-    	  	.media-body.lister-info
-    	    	h4.media-heading.lister-name Jonathan T.
-    	    	span.lister-review-number 12 Reviews
-    	    	img.lister-stars src="images/review-stars-small.png"
-    .col-xs-12.col-sm-6
-      .row.all-extras
-        .col-xs-6
-          .extras.media
-            .media-left.media-middle
-              img.media-object src="images/lock.png"
-            .media-body
-              h4.extra-font Lock
-        .col-xs-6
-          .extras.media
-            .media-left.media-middle
-              img.media-object src="images/lights.png"
-            .media-body
-              h4.extra-font Lights
-        .col-xs-6
-          .extras.media
-            .media-left.media-middle
-              img.media-object src="images/helmet.png"
-            .media-body
-              h4.extra-font Helmet
+.container.lister-main
+  .border-container
+    .row.lister-row
+      .col-xs-12.col-sm-6.lister-profile.p-t-1
+        .border-container.lister-container
+        	.media
+        	  	.media-left.media-middle
+        	    	a href="#"
+        	      	img.media-object alt=("Lister Profile Image") src="images/lister-profile.png"
+        	  	.media-body.lister-info
+        	    	h4.media-heading.lister-name Jonathan T.
+        	    	span.lister-review-number 12 Reviews
+        	    	img.lister-stars src="images/review-stars-small.png"
+      .col-xs-12.col-sm-6
+        .row.p-t-1
+          .col-xs-6
+            .extras.media
+              .media-left.media-middle
+                img.media-object src="images/lock.png"
+              .media-body
+                h4.extra-font Lock
+          .col-xs-6
+            .extras.media
+              .media-left.media-middle
+                img.media-object src="images/lights.png"
+              .media-body
+                h4.extra-font Lights
+          .col-xs-6
+            .extras.media
+              .media-left.media-middle
+                img.media-object src="images/helmet.png"
+              .media-body
+                h4.extra-font Helmet
 
-.container.ride-description.wrap
-  .row
-    .col-xs-12
-      p I love this bike. Fast as hell, and looks mean. This bike is a stud. It carried me to my 2nd Ironman finish and some podiums on some shorter tri's. Fast, mean, and does not take prisoners.
+.container.ride-description.p-t-1
+  .border-container
+    .row
+      .col-xs-12
+        p I love this bike. Fast as hell, and looks mean. This bike is a stud. It carried me to my 2nd Ironman finish and some podiums on some shorter tri's. Fast, mean, and does not take prisoners.
 
-      p 2010 Cervelo P3 56cm; Shimano Dura Ace with Quark Power meter. HED trispoke tubulars or Easton Aluminum clinchers. HED carbon disc tubular available (up charge $25/day). Speedplay or Look Keo pedals. Aero helmet and spare tube supplies available... Read More
+        p 2010 Cervelo P3 56cm; Shimano Dura Ace with Quark Power meter. HED trispoke tubulars or Easton Aluminum clinchers. HED carbon disc tubular available (up charge $25/day). Speedplay or Look Keo pedals. Aero helmet and spare tube supplies available... Read More
 
-.container.review-header.wrap
+.container.p-t-1
   span.review-header-font 12 Reviews
   = image_tag 'review-stars-large.png', class: 'review-header-stars'
 
-.container.review-main.cutoff-border.wrap
-  .row.review-row
-    .col-xs-12
-      .media.profile-review
-          .media-left
-            a href="#"
-                img.media-object alt=("Lister Profile Image") src="images/profile-review.png"
-          .media-body.review-body
-            .media-heading
-            span Mark C.
-            img.review-stars src="images/review-stars-large.png"
-            p.review-time 18 days ago
-            p awesome bike rental! had fun with the bike and marcelo made it reallyeasy to know where to pick up, and even accommodated the location!
+.container.review-main
+  .border-container
+    .row.review-row
+      .col-xs-12
+        .media.profile-review
+            .media-left
+              a href="#"
+                  img.media-object alt=("Lister Profile Image") src="images/profile-review.png"
+            .media-body.review-body
+              .media-heading
+              span Mark C.
+              img.review-stars src="images/review-stars-large.png"
+              p.review-time 18 days ago
+              p awesome bike rental! had fun with the bike and marcelo made it reallyeasy to know where to pick up, and even accommodated the location!
 
-.container.review-main.cutoff-border.wrap
-  .row.review-row
-    .col-xs-12
-      .media.profile-review
-          .media-left
-            a href="#"
-                img.media-object alt=("Lister Profile Image") src="images/profile-review.png"
-          .media-body.review-body
-            .media-heading
-            span Mark C.
-            img.review-stars src="images/review-stars-large.png"
-            p.review-time 18 days ago
-            p awesome bike rental! had fun with the bike and marcelo made it reallyeasy to know where to pick up, and even accommodated the location!
+.container.review-main.p-y-1
+  .border-container
+    .row.review-row
+      .col-xs-12
+        .media.profile-review.profile-review-2
+            .media-left
+              a href="#"
+                  img.media-object alt=("Lister Profile Image") src="images/profile-review.png"
+            .media-body.review-body
+              .media-heading
+              span Mark C.
+              img.review-stars src="images/review-stars-large.png"
+              p.review-time 18 days ago
+              p awesome bike rental! had fun with the bike and marcelo made it reallyeasy to know where to pick up, and even accommodated the location!
 
-.container.review-main.cutoff-border.wrap
-  .row.review-row
-    .col-xs-12
-      .media.profile-review
-          .media-left
-            a href="#"
-                img.media-object alt=("Lister Profile Image") src="images/profile-review.png"
-          .media-body.review-body
-            .media-heading
-            span Stephen P.
-            img.review-stars src="images/review-stars-large.png"
-            p.review-time 18 days ago
-            p Perfect experience! Marcelo was extremely nice, helpful, and willing to work around my schedule. Will definitely be renting from him again :)
+.container.review-main.p-t-1
+  .border-container
+    .row.review-row
+      .col-xs-12
+        .media.profile-review.profile-review-2
+            .media-left
+              a href="#"
+                  img.media-object alt=("Lister Profile Image") src="images/profile-review.png"
+            .media-body.review-body
+              .media-heading
+              span Stephen P.
+              img.review-stars src="images/review-stars-large.png"
+              p.review-time 18 days ago
+              p Perfect experience! Marcelo was extremely nice, helpful, and willing to work around my schedule. Will definitely be renting from him again :)
 
 a href="#"
-	p.review-link See More Reviews
+	p.review-link.p-t-1 See More Reviews
 
-.profile-and-cover.wrap
-	img.img-fluid.profile-cover src="images/profile-background.png"
-	img.img-fluid.profile-pic.center-block src="images/lister-profile-large.png"
+.profile-and-cover
+  img.img-fluid.profile-cover src="images/profile-background.png"
+  .container
+    .row
+      .col-xs-12
+      	img.img-fluid.profile-pic.center-block src="images/lister-profile-large.png"
 
-.container.lister-description.cutoff-border.wrap
-  .row
-    .col-xs-12
-      h2 Jonathan T.
-      span.join-date Joined April 2015
-      p.about-me I'm a bike adict who wants to share my rides for a good price.
+.container.lister-description
+  .border-container
+    .row
+      .col-xs-12
+        h2 Jonathan T.
+        span.join-date Joined April 2015
+        p.about-me I'm a bike adict who wants to share my rides for a good price.
 
-.container.verification-bubbles.cutoff-border.wrap
-  .row
-    .col-xs-12.m-b-1
-      span.verifications Verifications
-  .row
-    .col-sm-4.col-xs-6.text.xs.center
-      img src="images/mobile-verification-active.png"
-      span.verify-text Mobile
-    .col-sm-4.col-xs-6.text.xs.center.m-b-1
-      img src="images/facebook-verification.png"
-      span.verify-text Facebook
-    .col-sm-4.col-xs-6.text.xs.center
-      img src="images/twitter-verification.png"
-      span.verify-text Twitter
+.container.verification-bubbles
+  .border-container.p-y-1.verification-padding
+    .row
+      .col-xs-12.m-b-1
+        span.verifications Verifications
+    .row
+      .col-sm-4.col-xs-6.text.xs.center
+        img src="images/mobile-verification-active.png"
+        span.verify-text Mobile
+      .col-sm-4.col-xs-6.text.xs.center.m-b-1
+        img src="images/facebook-verification.png"
+        span.verify-text Facebook
+      .col-sm-4.col-xs-6.text.xs.center
+        img src="images/twitter-verification.png"
+        span.verify-text Twitter
 
-.container.stats-lister-all.cutoff-border.wrap
-  .row
-    .col-xs-6.text-xs-center
-      span.stats-lister Response Rate
-      h3 90%
-    .col-xs-6.text-xs-center
-      span.stats-lister Total Rides Listed
-      h3 4
-    .col-xs-6.text-xs-center
-      span.stats-lister Calendar Last Updated
-      h3 3 weeks ago
-    .col-xs-6.text-xs-center
-      span.stats-lister Response Time
-      h3 Within an hour
-    .col-xs-6.text-xs-center
-      span.stats-lister Last Seen
-      h3 2 days ago
+.container.stats-lister-all
+  .border-container.p-y-1
+    .row
+      .col-xs-6.text-xs-center
+        span.stats-lister Response Rate
+        h3 90%
+      .col-xs-6.text-xs-center
+        span.stats-lister Total Rides Listed
+        h3 4
+      .col-xs-6.text-xs-center
+        span.stats-lister Calendar Last Updated
+        h3 3 weeks ago
+      .col-xs-6.text-xs-center
+        span.stats-lister Response Time
+        h3 Within an hour
+      .col-xs-6.text-xs-center
+        span.stats-lister Last Seen
+        h3 2 days ago
 
-.container.location-header.text-xs-center.wrap
+.container.location-header.text-xs-center.p-y-1
   .row
     .col-xs-12
       h2 3rd Street Promenade
       span Santa Monica, CA
 
-img.img-fluid src="images/map-image.png"
+.map
+  iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJib6FsNOkwoARnIvDFXNV2rI&key=AIzaSyAFzCxNpZ7bN6DFMO9pps3nID7myF5_CCI"
 
-.container.similar-rides.text-xs-center.wrap
+.container.similar-rides.text-xs-center.p-y-1
   .row
     .col-xs-12
       h2 Similar Road Bikes in Santa Monica
 
-.container-fluid.p-x-0
+.container.p-x-0
   .row
-    .col-xs-12.col-sm-6.col-md-4.p-x-0
+    .col-xs-12.col-sm-6.p-x-0
       .card.card-inverse
         img.card-img src="images/ride-card.png"
         .card-img-overlay
@@ -176,7 +191,7 @@ img.img-fluid src="images/map-image.png"
               p.card-text $25 &middot Bike &middot Road Bike &middot 6'0" - 6'2"
             .col-xs-3
               img.card-text.card-profile-pic.p-r-1 src="images/ride-card-profile.png"
-    .col-xs-12.col-sm-6.col-md-4.p-x-0
+    .col-xs-12.col-sm-6.p-x-0
       .card.card-inverse
         img.card-img src="images/ride-card-2.png"
         .card-img-overlay
@@ -186,7 +201,7 @@ img.img-fluid src="images/map-image.png"
               p.card-text $25 &middot Bike &middot Road Bike &middot 6'0" - 6'2"
             .col-xs-3
               img.card-text.card-profile-pic.p-r-1 src="images/ride-card-profile.png"
-    .col-xs-12.col-sm-6.col-md-4.p-x-0
+    .col-xs-12.col-sm-6.p-x-0
       .card.card-inverse
         img.card-img src="images/ride-card-3.png"
         .card-img-overlay
