@@ -188,10 +188,6 @@ a.footer-link:visited {
 
 .ride-detail {
 
-  .search-form {
-    margin-top: 5px;
-  }
-
   .border-container {
     padding-left: 0;
     padding-right: 0;
@@ -539,6 +535,10 @@ a.footer-link:visited {
 }
 
 .index {
+
+  .search-form {
+    margin-top: 5px;
+  }
 
   .home-hero {
     background-image: url("../images/home-hero.png");
