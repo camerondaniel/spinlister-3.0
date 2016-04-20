@@ -1,21 +1,21 @@
 footer
-  .container.link-row
-    .row
-      .col-xs-2.col-md-1.text-xs-center.footer-wrap.footer-1
-        a.footer-link href="#" How it Works
-      .col-xs-2.col-md-1.text-xs-center.footer-wrap.footer-2
-        a.footer-link href="#" Safety
-      .col-xs-2.col-md-1.text-xs-center.footer-wrap.footer-2
-        a.footer-link href="#" Help
-      .col-xs-2.col-md-1.text-xs-center.footer-wrap.footer-2
-        a.footer-link href="#" Press
-      .col-xs-2.col-md-1.text-xs-center.footer-wrap.footer-2
-        a.footer-link href="#" Privacy
-      .col-xs-2.col-md-1.text-xs-center.footer-wrap.footer-2
-        a.footer-link href="#" Terms
-      .text-xs-right.col-md-6.hidden-sm-down.copyright
-        span &copy spinlister
-
+  nav.navbar.footer-nav
+    .container.footer-container
+      ul.nav.navbar-nav
+        li.nav-item.navlink.text-xs-center.footer-link
+          = link_to 'How it Works', '#', class: 'footer-link'
+        li.nav-item.navlink.text-xs-center.footer-link
+          = link_to 'Safety', '#', class: 'footer-link'
+        li.nav-item.navlink.text-xs-center.footer-link
+          = link_to 'Help', '#', class: 'footer-link'
+        li.nav-item.navlink.text-xs-center.footer-link
+          = link_to 'Press', '#', class: 'footer-link'
+        li.nav-item.navlink.text-xs-center.footer-link
+          = link_to 'Privacy', '#', class: 'footer-link'
+        li.nav-item.navlink.text-xs-center.footer-link
+          = link_to 'Terms', '#', class: 'footer-link'
+        li.nav-item.footer-link.pull-xs-right.hidden-xs-down
+          span &copy Spinlister
 
   .container-fluid
     .row

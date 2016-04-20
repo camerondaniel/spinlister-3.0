@@ -31,10 +31,6 @@ header {
   background-color: white;
 }
 
-.navlink {
-  padding-top: .308rem;
-}
-
 .navgray {
   padding-top: .5rem;
 }
@@ -83,26 +79,13 @@ a.nav-text-gray:hover {
   padding-top: 12px;
 }
 
-.link-row {
-    width: 90%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-top: 1px #333 solid;
-    margin-top: 70px;
-  }
-
-.footer-wrap {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.footer-1 {
-  line-height: 1;
+.footer-nav {
+  padding: 14px 0;
 }
 
 .footer-link {
     color: #bbb;
-    font-size: .78rem;
+    font-size: 1.02rem;
     font-weight: 400;
     text-decoration: none;
   }
@@ -115,75 +98,21 @@ a.footer-link:visited {
   @media (min-width: 375px) {
 
     .footer-link {
-      font-size: .9rem;
+      font-size: 1.26rem;
     }
   }
 
-  @media (min-width: 395px) {
+  @media (min-width: 425px) {
+    .footer-link {
+      font-size: 1.47rem;
+    }
+  }
+
+  @media (min-width: 544px) {
     .footer-link {
       font-size: 1rem;
     }
-  }
 
-  @media (min-width: 476px) {
-    .footer-wrap {
-      padding-left: .9375rem;
-      padding-right: .9375rem;
-    }
-  }
-
-  @media (min-width: 626px) {
-    .footer-wrap {
-      padding-right: 2rem;
-      padding-left: 2rem;
-    }
-
-  }
-
-  @include media-breakpoint-up(md) {
-
-    .footer-wrap {
-      padding-left: 0;
-      padding-right: .8rem;
-      text-align: left !important;
-    }
-
-    .copyright {
-      font-size: .8rem;
-      padding-right: 0;
-    }
-
-    .footer-link {
-      font-size: .8rem;
-    }
-
-    .footer-1 {
-      line-height: 1;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-
-    .footer-link {
-      font-size: 1rem;
-      font-weight: 400;
-    }
-
-    .copyright {
-      font-size: 1rem;
-      font-weight: 400;
-    }
-  }
-
-  @media (min-width: 1458px) {
-    .footer-1 {
-      line-height: 1.5;
-      margin-right: 20px;
-    }
-
-    .copyright {
-      flex: 0 0 47.94%;
-    }
   }
 
 .ride-detail {
@@ -524,6 +453,11 @@ a.footer-link:visited {
     .ride-detail-hero {
       height: 443px;
     }
+
+    .ride-price {
+    font-size: 19px;
+    padding-top: 16px !important;
+    }
   }
 
   @media (min-width: 1440px) {
@@ -855,6 +789,10 @@ a.footer-link:visited {
     .list-button {
       margin-left: 15%;
       width: 70%;
+    }
+
+    .footer-container {
+      border-top: #333 solid 1px;
     }
 
   }
