@@ -35,6 +35,10 @@ header {
   padding-top: .5rem;
 }
 
+.navwhite {
+  padding-top: 4px;
+}
+
 .nav-text-white {
   color: #ddd;
   font-size: 1.154rem;
@@ -111,6 +115,11 @@ a.footer-link:visited {
   @media (min-width: 544px) {
     .footer-link {
       font-size: 1rem;
+    }
+
+    .footer-container {
+      padding-left: 0;
+      padding-right: 0;
     }
 
   }
@@ -429,6 +438,14 @@ a.footer-link:visited {
       padding-bottom: 0 !important;
     }
 
+    .card-title {
+      font-size: 1rem;
+    }
+
+    .card-text {
+      font-size: .85rem;
+    }
+
   }
 
   @include media-breakpoint-up(md) {
@@ -457,6 +474,24 @@ a.footer-link:visited {
     .ride-price {
     font-size: 19px;
     padding-top: 16px !important;
+    }
+
+    .card-title {
+      font-size: 1.154rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .card-title {
+      font-size: 1.3rem;
+    }
+
+    .card-text {
+      font-size: 1.1rem;
     }
   }
 
@@ -791,8 +826,13 @@ a.footer-link:visited {
       width: 70%;
     }
 
+    .footer-nav {
+      padding-top: 50px;
+    }
+
     .footer-container {
       border-top: #333 solid 1px;
+      padding-top: 5px;
     }
 
   }
