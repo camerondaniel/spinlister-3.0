@@ -3,75 +3,83 @@ title: hate hate hsate
 ---
 
 .ride-detail-hero
-  .container
-    .row
-      .col-xs-12.ride-detail-title
-        span Ride Title Truncated to 50 Characters Goes Right Here
+  .ride-title
+    .container
+      .row
+        .col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2.ride-detail-title
+          span Ride Title Truncated to 50 Characters Goes Right Here
 
 .ride-meta-data
   .container
     .row
-      .col-sm-6.col-xs-12.ride-specs.p-y-1
-        img src="images/ride-detail-bicycle.png" class="ride-type-bicycle"
-        span.ride-type Ride Type &middot Ride Subtype
-        span.ride-height Rider Height 6'0" - 6'2" (Bike is 54-56 cm)
-      .col-sm-6.col-xs-12.text-xs-center.ride-price
-        .border-container.p-y-1.price-container
-          span.col-xs-4.price-1.text-xs-right $10/Hour
-          span.col-xs-4.text-xs-right $35/Day
-          span.col-xs-4.price-3.text-xs-right $120/Week
+      .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+        .row
+          .col-xs-12.col-sm-6.col-md-6.ride-specs.p-y-1
+            img src="images/ride-detail-bicycle.png" class="ride-type-bicycle"
+            span.ride-type Ride Type &middot Ride Subtype
+            span.ride-height Rider Height 6'0" - 6'2" (Bike is 54-56 cm)
+          .col-xs-12.col-sm-6.col-md-6.ride-price
+            .border-container.p-y-1.price-container.text-xs-center
+              span.col-xs-4.price-1 $10/Hour
+              span.col-xs-4 $35/Day
+              span.col-xs-4.price-3 $120/Week
 
 .container.lister-main
-  .border-container
-    .row.lister-row
-      .col-xs-12.col-sm-6.lister-profile.p-t-1
-        .border-container.lister-container
-        	.media
-        	  	.media-left.media-middle
-        	    	a href="#"
-        	      	img.media-object alt=("Lister Profile Image") src="images/lister-profile.png"
-        	  	.media-body.lister-info
-        	    	h4.media-heading.lister-name Jonathan T.
-        	    	span.lister-review-number 12 Reviews
-        	    	img.lister-stars src="images/review-stars-small.png"
-      .col-xs-12.col-sm-6
-        .row.p-t-1
-          .col-xs-6
-            .extras.media
-              .media-left.media-middle
-                img.media-object src="images/lock.png"
-              .media-body
-                h4.extra-font Lock
-          .col-xs-6
-            .extras.media
-              .media-left.media-middle
-                img.media-object src="images/lights.png"
-              .media-body
-                h4.extra-font Lights
-          .col-xs-6
-            .extras.media
-              .media-left.media-middle
-                img.media-object src="images/helmet.png"
-              .media-body
-                h4.extra-font Helmet
+  .row.lister-row
+    .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .border-container
+        .row
+          .col-xs-12.col-sm-6.col-md-6.lister-profile.p-t-1
+            .border-container.lister-container
+            	.media
+            	  	.media-left.media-middle
+            	    	a href="#"
+            	      	img.media-object alt=("Lister Profile Image") src="images/lister-profile.png"
+            	  	.media-body.lister-info
+            	    	h4.media-heading.lister-name Jonathan T.
+            	    	span.lister-review-number 12 Reviews
+            	    	img.lister-stars src="images/review-stars-small.png"
+          .col-xs-12.col-sm-6.col-md-6
+            .border-container.price-holder
+              .row.p-t-1
+                .col-xs-6
+                  .extras.media
+                    .media-left.media-middle
+                      img.media-object src="images/lock.png"
+                    .media-body
+                      h4.extra-font Lock
+                .col-xs-6
+                  .extras.media
+                    .media-left.media-middle
+                      img.media-object src="images/lights.png"
+                    .media-body
+                      h4.extra-font Lights
+                .col-xs-6
+                  .extras.media
+                    .media-left.media-middle
+                      img.media-object src="images/helmet.png"
+                    .media-body
+                      h4.extra-font Helmet
 
 .container.ride-description.p-t-1
-  .border-container
-    .row
-      .col-xs-12
+  .row
+    .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .border-container
         p I love this bike. Fast as hell, and looks mean. This bike is a stud. It carried me to my 2nd Ironman finish and some podiums on some shorter tri's. Fast, mean, and does not take prisoners.
 
         p 2010 Cervelo P3 56cm; Shimano Dura Ace with Quark Power meter. HED trispoke tubulars or Easton Aluminum clinchers. HED carbon disc tubular available (up charge $25/day). Speedplay or Look Keo pedals. Aero helmet and spare tube supplies available... Read More
 
 .container.p-t-1
-  span.review-header-font 12 Reviews
-  = image_tag 'review-stars-large.png', class: 'review-header-stars'
+  .row
+    .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      span.review-header-font 12 Reviews
+      = image_tag 'review-stars-large.png', class: 'review-header-stars'
 
 .container.review-main
-  .border-container
-    .row.review-row
-      .col-xs-12
-        .media.profile-review
+  .row.review-row
+    .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .border-container
+        .media.profile-review.p-t-1
             .media-left
               a href="#"
                   img.media-object alt=("Lister Profile Image") src="images/profile-review.png"
@@ -82,10 +90,10 @@ title: hate hate hsate
               p.review-time 18 days ago
               p awesome bike rental! had fun with the bike and marcelo made it reallyeasy to know where to pick up, and even accommodated the location!
 
-.container.review-main.p-y-1
-  .border-container
-    .row.review-row
-      .col-xs-12
+.container.review-main.p-t-1
+  .row.review-row
+    .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .border-container
         .media.profile-review.profile-review-2
             .media-left
               a href="#"
@@ -98,9 +106,9 @@ title: hate hate hsate
               p awesome bike rental! had fun with the bike and marcelo made it reallyeasy to know where to pick up, and even accommodated the location!
 
 .container.review-main.p-t-1
-  .border-container
-    .row.review-row
-      .col-xs-12
+  .row.review-row
+    .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .border-container
         .media.profile-review.profile-review-2
             .media-left
               a href="#"
@@ -123,47 +131,50 @@ a href="#"
       	img.img-fluid.profile-pic.center-block src="images/lister-profile-large.png"
 
 .container.lister-description
-  .border-container
-    .row
-      .col-xs-12
+  .row
+    .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .border-container
         h2 Jonathan T.
         span.join-date Joined April 2015
         p.about-me I'm a bike adict who wants to share my rides for a good price.
 
 .container.verification-bubbles
-  .border-container.p-y-1.verification-padding
+  .p-y-1.verification-padding
     .row
-      .col-xs-12.m-b-1
-        span.verifications Verifications
-    .row
-      .col-sm-4.col-xs-6.text.xs.center
-        img src="images/mobile-verification-active.png"
-        span.verify-text Mobile
-      .col-sm-4.col-xs-6.text.xs.center.m-b-1
-        img src="images/facebook-verification.png"
-        span.verify-text Facebook
-      .col-sm-4.col-xs-6.text.xs.center
-        img src="images/twitter-verification.png"
-        span.verify-text Twitter
+      .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+        .border-container
+          h3.verifications Verifications
+          .row
+            .col-sm-4.col-xs-6.text.xs.center
+              img src="images/mobile-verification-active.png"
+              span.verify-text Mobile
+            .col-sm-4.col-xs-6.text.xs.center.m-b-1
+              img src="images/facebook-verification.png"
+              span.verify-text Facebook
+            .col-sm-4.col-xs-6.text.xs.center
+              img src="images/twitter-verification.png"
+              span.verify-text Twitter
 
 .container.stats-lister-all
-  .border-container.p-y-1
-    .row
-      .col-xs-6.text-xs-center
-        span.stats-lister Response Rate
-        h3 90%
-      .col-xs-6.text-xs-center
-        span.stats-lister Total Rides Listed
-        h3 4
-      .col-xs-6.text-xs-center
-        span.stats-lister Calendar Last Updated
-        h3 3 weeks ago
-      .col-xs-6.text-xs-center
-        span.stats-lister Response Time
-        h3 Within an hour
-      .col-xs-6.text-xs-center
-        span.stats-lister Last Seen
-        h3 2 days ago
+  .row
+    .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .border-container.p-y-1
+        .row
+          .col-xs-6.text-xs-center
+            span.stats-lister Response Rate
+            h3 90%
+          .col-xs-6.text-xs-center
+            span.stats-lister Total Rides Listed
+            h3 4
+          .col-xs-6.text-xs-center
+            span.stats-lister Calendar Last Updated
+            h3 3 weeks ago
+          .col-xs-6.text-xs-center
+            span.stats-lister Response Time
+            h3 Within an hour
+          .col-xs-6.text-xs-center
+            span.stats-lister Last Seen
+            h3 2 days ago
 
 .container.location-header.text-xs-center.p-y-1
   .row

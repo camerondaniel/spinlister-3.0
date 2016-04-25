@@ -1,19 +1,22 @@
 header
   nav.navbar.nav-container
-    .top-container
-      = link_to 'index.html', class: 'pull-xs-left logo' do
-        = image_tag 'logo.png'
-      form.form-inline.pull-xs-left.search-holder
-        input.search-form.form-control.hidden-xs-down placeholder= 'Search for a ride' type= 'text'
-      = link_to '#', class: 'pull-xs-right mobile-bar' do
-        = image_tag 'mobile-menu-bar.png', class: 'mobile-menu-bar hidden-sm-up'
-      .pull-sm-right.hidden-xs-down
-        ul.nav.navbar-nav
-          li.nav-item.navlink.navwhite
-            = link_to 'Home', '#', class: 'nav-text-white'
-          li.nav-item.navlink.navgray
-            = link_to 'Sign Up', '#', class: 'nav-text-gray'
-          li.nav-item.navlink.navgray
-            = link_to 'Log In', '#', class: 'nav-text-gray'
-          li.nav-item
-            = link_to 'List a Ride', '#', class: 'btn btn-success'
+    .container
+      .nav-border
+        .row
+          .col-xs-12
+            = link_to 'index.html', class: 'pull-xs-left logo' do
+              = image_tag 'logo.png'
+            form.form-inline.pull-xs-left.search-holder
+              input.search-form.form-control.hidden-xs-down placeholder= 'Search for a ride' type= 'text'
+            = link_to '#', class: 'pull-xs-right mobile-bar' do
+              = image_tag 'mobile-menu-bar.png', class: 'mobile-menu-bar hidden-sm-up'
+            .pull-sm-right.hidden-xs-down
+              ul.nav.navbar-nav
+                li.nav-item.navlink.navwhite
+                  = link_to 'Home', '#', class: 'nav-text-white'
+                li.nav-item.navlink.navgray
+                  = link_to 'Sign Up', '#', class: 'nav-text-gray'
+                li.nav-item.navlink.navgray
+                  = link_to 'Log In', '#', class: 'nav-text-gray'
+                li.nav-item
+                  = link_to 'List a Ride', '#', class: 'btn btn-success'

@@ -78,9 +78,7 @@ nav .btn-success {
   padding-top: .3rem;
 }
 
-.nav-container {
-  max-width: 92%;
-  margin-left: 4%;
+.nav-border {
   border-bottom: 1px solid rgba($white, .2);
   padding: 12px 0;
 }
@@ -170,12 +168,16 @@ a.footer-link:visited {
     position: relative;
   }
 
+  .ride-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
   .ride-detail-title {
     font-size: 1.84rem;
     color: white;
     font-weight: 400;
-    position: absolute;
-    bottom: 0;
   }
 
   .ride-specs {
@@ -260,7 +262,6 @@ a.footer-link:visited {
   }
 
   .profile-review {
-    padding-top: 1.1rem;
     margin-bottom: 0;
   }
 
@@ -334,7 +335,7 @@ a.footer-link:visited {
 
   .card {
     margin: 0;
-    background-color: none;
+    background-color: transparent;
     border: none;
     border-radius: 0;
   }
@@ -376,11 +377,6 @@ a.footer-link:visited {
 
   @include media-breakpoint-up(sm) {
 
-    .nav-container {
-      max-width: 92%;
-      margin-left: 4%;
-    }
-
      .ride-detail-hero {
       height: 343px;
     }
@@ -411,6 +407,11 @@ a.footer-link:visited {
     .price-container {
       border-bottom: none;
       padding-top: 0 !important;
+      text-align: right !important;
+    }
+
+    .price-holder {
+      border-bottom: none;
     }
 
     .price-1 {
@@ -458,15 +459,6 @@ a.footer-link:visited {
 
   @include media-breakpoint-up(md) {
 
-    .nav-container {
-      max-width: 67.5%;
-      margin-left: 17%;
-    }
-
-    .container {
-      max-width: 67.5%;
-    }
-
     .profile-cover {
       width: 66.7%;
       margin-left: 16.7%;
@@ -477,11 +469,6 @@ a.footer-link:visited {
   @include media-breakpoint-up(lg) {
     .ride-detail-hero {
       height: 443px;
-    }
-
-    .ride-price {
-    font-size: 19px;
-    padding-top: 16px !important;
     }
 
     .card-title {
